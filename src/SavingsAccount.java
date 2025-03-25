@@ -1,4 +1,3 @@
-
 public class SavingsAccount extends BankAccount {
     private final double interestRate = 0.03 ;
 

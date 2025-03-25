@@ -1,4 +1,3 @@
-
 public abstract class BankAccount {
     final private String accountNumber ;
     private String accountHolderName ;
@@ -27,7 +26,7 @@ public abstract class BankAccount {
             this.balance -= amount ;
             System.out.println("Amount " + amount + " was withdrawn from account number " + this.accountNumber) ;
         }
-        else if(amount > balance){
+        else if(amount > this.balance){
             System.out.println("Insufficient account balance") ;
         }
         else{
@@ -36,15 +35,15 @@ public abstract class BankAccount {
     }
 
     public double getBalance(){
-        return balance ;
+        return this.balance ;
     }
 
     public String getAccountNumber(){
-        return accountNumber ;
+        return this.accountNumber ;
     }
 
     public String getAccountHolderName(){
-        return accountHolderName ;
+        return this.accountHolderName ;
     }
 
 }
